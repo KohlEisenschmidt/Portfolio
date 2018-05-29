@@ -147,6 +147,11 @@ nav a:first-child {
   border-left: 0 none;
 }
 
+nav .nav-wrapper {
+  /* background-color: #4aaaa5; */
+  background-color:  #00b386; 
+}
+
 /* footer */
 
 footer {
