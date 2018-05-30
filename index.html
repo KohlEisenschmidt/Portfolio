@@ -3,37 +3,76 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Contact | Your Name</title>
-  
+    <title>Contact | Kohl Eisenschmidt</title>
   
     <!-- JQuery link: -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    -->  
+    
     <!-- Compiled and minified CSS -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">   
 
-    <link href="https://fonts.googleapis.com/css?family=Exo+2|Fira+Sans|Josefin+Sans|Merriweather+Sans|Sunflower:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Exo+2|Fira+Sans|Josefin+Sans|Merriweather+Sans|Sunflower:300" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
   </head>
 
 <body>
 
   <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Kohl Eisenschmidt</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio2.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <nav>
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">Kohl Eisenschmidt</a>
+            <ul class="right hide-on-med-and-down">
+              <li> <a href="index.html">About</a></li>
+              <li> <a href="portfolio.html">Portfolio</a></li>
+              <!-- <li> <a href="contact.html">Contact</a></li> -->
+              <li> <a href="#bottom">Contact</a></li>
+            </ul>
+          </div>
+    </nav>
+<!-- <div class="container">
+  <nav> -->
+  <!-- <a href="index.html" id="logo">Your Name</a> -->
+      
+    <!-- <a href="index.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div> -->
+</header>
 
   <div id="main-container" class="container">
     <section class="main-section">
@@ -56,12 +95,14 @@
     </section>
 
     <section class="sidebar">
-      <div id="connect">
+      <div id="connect" >
         <h2>Connect with Me</h2>
 
-        <a href="#"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
-        <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
-        <!-- <a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a> -->
+        <a id="connect1"data="GitHub"href="https://github.com/KohlEisenschmidt" target="_blank"><img src="assets/images/white-github-64.png" class="social" alt="GitHub" /></a>
+        <a id="connect1"data="LinkedIn"href="https://www.linkedin.com/in/kohl-eisenschmidt-6a98703b/" target="_blank"><img src="assets/images/white-linkedin-64.png" class="social" alt="LinkedIn" /></a>
+        <a id="connect1"data="Resume"href="#" target="_blank"><img src="assets/images/white-pdf-64.png" title="Resume" class="social" alt="Resume" /></a>
+        <a id="connect2"data="Email Me" href="mailto:kohleisenschmidt@gmail.com" target="_blank">kohleisenschmidt@gmail.com</a>
+        <a id="bottom"></a>
       </div>
     </section>
   </div>

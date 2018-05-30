@@ -3,100 +3,300 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Portfolio | Your Name</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Portfolio | Kohl Eisenschmidt</title>
 
     <!-- JQuery link: -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
-    <!-- Compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+        <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Exo+2|Fira+Sans|Josefin+Sans|Merriweather+Sans|Sunflower:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Exo+2|Fira+Sans|Josefin+Sans|Merriweather+Sans|Sunflower:300" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <script>
+            $(document).ready(function(){
+              // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+            
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+            
+                  // Store hash
+                  var hash = this.hash;
+            
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 800, function(){
+               
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+            });
+            </script>
   </head>
 
 <body>
 
   <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
-      <nav>
-        <a href="index.html">About</a>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo">Kohl Eisenschmidt</a>
+                <ul class="right hide-on-med-and-down">
+                <li> <a href="index.html">About</a></li>
+                <li> <a href="portfolio.html">Portfolio</a></li>
+                <!-- <li> <a href="contact.html">Contact</a></li> -->
+                <li> <a href="#bottom">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    <!-- <div class="container">
+      <nav> -->
+      <!-- <a href="index.html" id="logo">Your Name</a> -->
+          
+        <!-- <a href="index.html">About</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="contact.html">Contact</a>
       </nav>
-    </div>
+    </div> -->
   </header>
 
   <div id="main-container" class="container">
     <section class="main-section">
       <h1>Portfolio</h1>
 
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-1.jpg" alt="hangman">
-
-        <h3>Hangman</h3>
-      </div>
-
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game">
-
-        <h3>RPG Game</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game">
-
-        <h3>Trivia Game</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">
-
-        <h3>Rutgers Info Widget</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
-
-        <h3>Rock Paper Scissors</h3>
-      </div>
-
-      <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/office.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-            <p><a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-          </div>
+    <!-- <div class="carousel"> -->
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/images/eventcomment.png">
+                <img class="activator" src="assets/images/eventcommentmap.png">
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Comment Event
+                    <i class="material-icons right">more_vert</i>
+                </span>
+                <p>
+                    <a href="https://project3kohl-philo-sam.herokuapp.com/" target="_blank">Demo</a>
+                </p>
+                <p>
+                    <a href="https://github.com/KohlEisenschmidt/Project3_Philo_Sam_Kohl" target="_blank">Code</a>
+                </p>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Comment Event
+                    <i class="material-icons right">close</i>
+                </span>
+                <p>This App lets users pin time sensitive crowd sourced wisdom to a event map</p>
+            </div>
         </div>
+        
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/images/logo2.png">
+                <img class="activator" src="assets/images/rwb.png">
+        
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">RWB+1
+                    <i class="material-icons right">more_vert</i>
+                </span>
+                <p>
+                    <a href="https://radiant-castle-27832.herokuapp.com/" target="_blank">Demo</a>
+                </p>
+                <p>
+                    <a href="https://github.com/KohlEisenschmidt/GroupProject2" target="_blank">Code</a>
+                </p>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">RWB+1
+                    <i class="material-icons right">close</i>
+                </span>
+                <p>Run, Walk, Bike plus One is a app where you choose a activity you want to participate in and are given a range of
+                    matches based on your preferences.</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/images/capturethemomenttop.png">
+                <img class="activator" src="assets/images/capturethemomentbottom.png">
+                <!-- <img class="activator" src="assets/images/May22.2018.10_49AM.webm"> -->
+                <!-- <img class="activator" src="assets/images/rwb.png"> -->
+                <!-- <iframe src="https://giphy.com/embed/326joM06WxFNMSkPjj" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/bublywater-work-tired-326joM06WxFNMSkPjj">via GIPHY</a></p> -->
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Capture The Moment
+                    <i class="material-icons right">more_vert</i>
+                </span>
+                <p>
+                    <a href="https://kohleisenschmidt.github.io/Project-1/" target="_blank">Demo</a>
+                </p>
+                <p>
+                    <a href="https://github.com/KohlEisenschmidt/Project1-Kohl-Philo-KT" target="_blank">Code</a>
+                </p>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Capture The Moment
+                    <i class="material-icons right">close</i>
+                </span>
+                <p>In this app we used a Face Recognition, Thesaurus and Gify APIs to enable you to speed search relatable gifs for
+                    your time sensitive group chats.</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/images/train1.png">
+                <img class="activator" src="assets/images/train2.png">
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Train-Scheduler
+                    <i class="material-icons right">more_vert</i>
+                </span>
+                <p>
+                    <a href="https://kohleisenschmidt.github.io/Train-Scheduler/" target="_blank">Demo</a>
+                </p>
+                <p>
+                    <a href="https://github.com/KohlEisenschmidt/Train-Scheduler" target="_blank">Code</a>
+                </p>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Train-Scheduler
+                    <i class="material-icons right">close</i>
+                </span>
+                <p>Train-Scheduler is a app that incorporates Firebase to host arrival and departure data. The app retrieves and manipulates
+                    this information with Moment.js and will provide up-to-date information about various trains, namely their arrival
+                    times and how many minutes remain until they arrive at their station.</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/images/friendfinder.png">
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">FriendFinder</span>
+                <i class="material-icons right">more_vert</i>
+                </span>
+                <p>
+                    <a href="https://dry-hollows-58344.herokuapp.com/" target="_blank">Demo</a>
+                </p>
+                <p>
+                    <a href="https://github.com/KohlEisenschmidt/FriendFinder" target="_blank">Code</a>
+                </p>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">FriendFinder
+                    <i class="material-icons right">close</i>
+                </span>
+                <p>This full-stack site will take in results from users' surveys and compare their answers with those from other users.The
+                    app will then display the name and picture of the user with the best overall match. </p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/images/burgerapp.png">
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Burger
+                    <i class="material-icons right">more_vert</i>
+                </span>
+                <p>
+                    <a href="https://quiet-fortress-65179.herokuapp.com/" target="_blank">Demo</a>
+                </p>
+                <p>
+                    <a href="https://github.com/KohlEisenschmidt/burger" target="_blank">Code</a>
+                </p>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Burger
+                    <i class="material-icons right">close</i>
+                </span>
+                <p>Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat. Each burger in
+                    the waiting area also has a `Devour it!` button. When the user clicks it, the burger will move to the right side
+                    of the page
+                </p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/images/clickygame.png">
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Clicky Game
+                    <i class="material-icons right">more_vert</i>
+                </span>
+                <p>
+                    <a href="https://heroku-is-still-garbage.herokuapp.com/" target="_blank">Demo</a>
+                </p>
+                <p>
+                    <a href="https://github.com/KohlEisenschmidt/Clicky-Game" target="_blank">Code</a>
+                </p>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Clicky Game
+                    <i class="material-icons right">close</i>
+                </span>
+                <p>Run, Walk, Bike plus One is a app where you choose a activity you want to participate in and are given a range of
+                    matches based on your preferences.</p>
+            </div>
+        </div>
+
+    
 
     </section>
 
     <section class="sidebar">
-      <div id="connect">
-        <h2>Connect with Me</h2>
-
-        <a href="#"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
-        <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
-        <!-- <a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a> -->
-      </div>
-    </section>
+        <div id="connect" >
+          <h2>Connect with Me</h2>
+  
+          <a id="connect1"data="GitHub"href="https://github.com/KohlEisenschmidt" target="_blank"><img src="assets/images/white-github-64.png" class="social" alt="GitHub" /></a>
+          <a id="connect1"data="LinkedIn"href="https://www.linkedin.com/in/kohl-eisenschmidt-6a98703b/" target="_blank"><img src="assets/images/white-linkedin-64.png" class="social" alt="LinkedIn" /></a>
+          <a id="connect1"data="Resume"href="#" target="_blank"><img src="assets/images/white-pdf-64.png" title="Resume" class="social" alt="Resume" /></a>
+          <a id="connect2"data="Email Me" href="mailto:kohleisenschmidt@gmail.com" target="_blank">kohleisenschmidt@gmail.com</a>
+          <a id="bottom"></a>
+        </div>
+      </section>
   </div>
 
   <footer>
     <div class="container">
-      Copyright &copy; 
+      &copy; Created by Kohl Eisenschmidt
     </div>
   </footer>
+
+  <script>
+   
+    // to put in a carousel for the cards (later) https://materializecss.com/carousel.html#five!
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems, {
+            duration: 7000,
+            indicators: true
+        });
+
+        $('.carousel').carousel({
+            duration: 1000
+        });
+        setInterval(function () {
+            $('.carousel').carousel('next');
+        }, 7500); // every 2 seconds
+    });
+</script>
 </body>
 
 </html>

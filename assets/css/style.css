@@ -21,7 +21,7 @@ body {
 .container {
   width: 100%;
   max-width: 960px;
-  margin: 0 auto;
+  margin:  auto;
   clear: both;
   /* opacity: 0.5; */
   /* background-color:rgba(0, 0, 0, 0.5); */
@@ -66,6 +66,7 @@ h1 {
   font-size: 30px;
   line-height: 49px;
   border-bottom: 3px solid #ddd;
+
 }
 
 h2,
@@ -136,7 +137,7 @@ nav a {
   /* padding-left: 15px; */
   /* margin-left: 15px; */
   /* line-height: 180px; */
-  /* color: #999; */
+  color: #999;
   /* text-decoration: none; */
   /* border-left: 50px solid #efefef; */
 }
@@ -147,6 +148,11 @@ nav a:first-child {
 /*--------------------------------------------------------------------------------*/
 nav a:last-child {
   margin: 30px ;
+  font-weight: 300;
+}
+
+nav ul a {
+  font-size: 25px;
 }
 
 nav .nav-wrapper {
@@ -203,34 +209,74 @@ footer {
 /* sidebar */
 
 .sidebar {
-  float: right;
+  /* float: auto; */
   width: 100%;
-  max-width: 270px;
+  max-width: 390px;
   padding: 30px;
+  margin: auto;
   margin-bottom: 20px;
+  margin-top: 20px;
+  color: white;
+  clear: both;
   /* background: #fff; */
   background-color:rgba(0, 0, 0, 0.5);
-  border: 1px solid #ddd;
+  align-content: center;
+  /* border: 1px solid #ddd; */
 }
+
 
 h3,
 .sidebar h2 {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   margin-bottom: 15px;
   line-height: 22px;
   border-bottom: 2px solid #eee;
+  text-align: center;
 }
 
-.social {
+.sidebar a, #connect1 {
+  margin-left: 30px;
+}
+.sidebar a, #connect2{
+  margin-left: 0px;
+  /* color: #eee; */
+  font-size: 25px;
+  font:bold;
+}
+
+.sidebar a:hover {
+  /* color: red; */
+  color: #00b386;
+  position: relative;
+}
+
+
+.sidebar a[data]:hover:after {
+  content: attr(data);
+  padding: 4px 8px;
+  /* color: white); */
+  position: absolute;
+  /* position: relative; */
+  right: -10px;
+  top: 100%;
+  white-space: nowrap;
+  z-index: 20;
+  border-radius: 5px ;
+  background: rgba(0,0,0,0.5);
+  font-weight: 400;
+}
+
+/* .social {
   width: 62px;
   height: 62px;
   margin-top: 8px;
-  margin-right: 5px;
+  margin-left: 25px;
+  align-content: auto;
 }
 
 .social:last-child {
   margin-right: 0;
-}
+} */
 
 /* main */
 
@@ -239,11 +285,13 @@ h3,
 }
 
 .main-section {
-  float: left;
+  /* clear: both; */
+  /* float: left; */
+  overflow: auto;
   width: 100%;
   max-width: 750px;
   padding: 30px;
-  margin: 0 0 40px;
+  margin: auto;
   /* background: #fff; */
   background-color:rgba(0, 0, 0, 0.5);
   border: 0px solid #ddd;
