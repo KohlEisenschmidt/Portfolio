@@ -181,7 +181,7 @@ nav .brand-logo {
     /* 1px 1px 0 #000, */
     /* 1px 1px 0 #000; */
   /* background: linear-gradient(to right, #30CFD0 0%, #330867 100%); */
-  background: linear-gradient(to right, #D4C937 0%, #D46037 100%);
+  background: linear-gradient(to right, #D46037 0%,  #D4C937 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -257,7 +257,7 @@ h3,
   /* color: white); */
   position: absolute;
   /* position: relative; */
-  right: -10px;
+  right: -15px;
   top: 100%;
   white-space: nowrap;
   z-index: 20;
