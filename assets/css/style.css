@@ -158,7 +158,10 @@ nav ul a {
 nav .nav-wrapper {
   /* background-color: #4aaaa5; */
   background-color:  #00b386; 
+  /* background-color:  #00b386 !important; 
+  background: url("../images/grid-png-43578.png" ); */
   height: 100px;
+  margin-top: -20;
 }
 
 nav .brand-logo {
