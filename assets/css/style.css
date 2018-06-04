@@ -74,58 +74,6 @@ h3 {
   font-size: 22px;
 }
 
-/* header  from bootstrap*/
-
- /* #masthead { */
-     /* position: fixed; */
-     /* z-index: 99; */
-      /* width: 100%; */
-  /* height: 150px; */
-  /* margin: 0 0 110px; */
-     /* overflow: auto; */
-     /* color: #fff; */
-  /* background: #fff; */
-  /* background: #00ff99; */
-  /* background: #00b386; */
-     /* border-bottom: 2px solid #ccc; */
-/* } */
-
-/* #logo { */
-      /* float: left; */
-      /* width: 320px; */
-      /* height: 90px; */
-  /* font-family: Georgia, Times, "Times New Roman", serif; */
-  /* font-family: 'Fira Sans', sans-serif; */
-  /* font-family: 'Sunflower', sans-serif; */
-  /* font-family: 'Exo 2', sans-serif; */
-      /* font-family: 'Josefin Sans', sans-serif; */
-  /* font-family: 'Merriweather Sans', sans-serif; */
-      /* font-size: 30px; */
-      /* font-weight: 700; */
-      /* line-height: 90px; */
-  /* color: #fff; */
-     /* text-align: center; */
-      /* text-decoration: none; */
-  /* background: #4aaaa5; */
-  /* background: #FFD700; */
-  /* background: #D4AF37; */
-     /* background-color:rgba(0, 0, 0, 0); */
-  
-
-/* color: #D46037 -webkit-gradient(linear, left top, left bottom, from(#D4C937), to(#D46037)) no-repeat; */
-  /* Background Gradient for Analagous Colors */
-    /* background-color: #D46037; */
-    /* For WebKit (Safari, Chrome, etc) */
-    /* background: #D46037 -webkit-gradient(linear, left top, left bottom, from(#D4C937), to(#D46037)) no-repeat; */
-    /* Mozilla,Firefox/Gecko */
-    /* background: #D46037 -moz-linear-gradient(top, #D4C937, #D46037) no-repeat; */
-    /* IE 5.5 - 7 */
-    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#D4C937, endColorstr=#D46037) no-repeat; */
-    /* IE 8 */
-    /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#D4C937, endColorstr=#D4C937)" no-repeat; */
-
-
-/* } */
 
 nav {
   float: right;
@@ -161,14 +109,15 @@ nav .nav-wrapper {
   /* background-color:  #00b386 !important; 
   background: url("../images/grid-png-43578.png" ); */
   height: 100px;
-  margin-top: -20;
+  border-bottom: 5px solid #FFD700;
+ 
 }
 
 nav .brand-logo {
   /* background-color: #4aaaa5; */
   /* background-color:  #00b386;  */
   /* height: 100px; */
-  left: 50px;
+  left: 30px;
   top: 20px;
   align-content: auto;
   font-size: 60px;
@@ -189,11 +138,36 @@ nav .brand-logo {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+ nav #secondlogo {
+  font-size: 30px;
+  /* right: 1130px; */
+  /* right: 900px; */
+   /* background-color: #4aaaa5; */
+  /* background-color:  #00b386;  */
+  /* height: 100px; */
+  left: 550px;
+  top: 20px;
+  align-content: auto;
+  font-style: italic;
+  
+  /* height: 100px; */
+  padding: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font: bolder;
+  font-weight: 700;
+  /* text-shadow: */
+    /* -1px -1px 0 #000, */
+    /* 1px -1px 0 #000, */
+    /* -1px 1px 0 #000, */
+    /* 1px 1px 0 #000, */
+    /* 1px 1px 0 #000; */
+  /* background: linear-gradient(to right, #30CFD0 0%, #330867 100%); */
+  background: linear-gradient(to right, #D46037 0%,  #D4C937 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
 
-
- /* li { */
-  /* align-content: center; */
-/* } */
 
 /* footer */
 
@@ -386,13 +360,17 @@ input[type=submit] {
 }
 
 .card{
-  height: 450px;
+  height: 460px;
   width: 300px;
   position: relative;
   float: left;
   padding: 10px;
   margin: 20px 20px 25px;
   overflow: auto;
+}
+
+.card-image {
+  height: 210px;
 }
 
 .card-content,p {
@@ -405,51 +383,9 @@ input[type=submit] {
   align-self: right;
 }
 
-/* .brand-logo{ */
-  /* left: 50px; */
-  /* top: 20px; */
-  /* color: black; */
-  /* color:    #D46037 -webkit-gradient(linear, left top, left bottom, from(#D4C937), to(#D46037)) no-repeat; */
-
-  /* color: -webkit-linear-gradient(#eee, #333); */
-  /* -webkit-background-clip: text; */
-  /* -webkit-text-fill-color: transparent; */
-
-   /* Background Gradient for Analagous Colors */
-   /* background-color: #D46037; */
-   /* For WebKit (Safari, Chrome, etc) */
-               /* background: #D46037 -webkit-gradient(linear, left top, left bottom, from(#D4C937), to(#D46037)) no-repeat; */
-   /* Mozilla,Firefox/Gecko */
-   /* background: #D46037 -moz-linear-gradient(top, #D4C937, #D46037) no-repeat; */
-   /* IE 5.5 - 7 */
-   /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#D4C937, endColorstr=#D46037) no-repeat; */
-   /* IE 8 */
-   /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#D4C937, endColorstr=#D4C937)" no-repeat; */
-
-
-  
-   
-    /* font-size: 30vw; */
-    /* font-size: 100%; */
-    /* font-family: 'Poppins', sans-serif; */
-    /* font-family: 'Josefin Sans', sans-serif; */
-    /* background: linear-gradient(to right, #30CFD0 0%, #330867 100%); */
-    /* background: linear-gradient(to right, #D4C937 0%, #D46037 100%); */
-    
-    /* -webkit-background-clip: text; */
-    /* -webkit-text-fill-color: transparent; */
-  /* } */
-
-  /* .right hide-on-med-and-down { */
-
-  /* } */
-
-
-/* .nav-wrapper{ */
-  /* background-color:  #00b386;  */
-  /* height: 50px; */
-  /* } */
-
-/* li { */
-  /* margin-top: 20px; */
-/* } */
+.technologies{
+  font-size: 10px;
+  float: right;
+  position: absolute;
+  bottom: 0;
+}
